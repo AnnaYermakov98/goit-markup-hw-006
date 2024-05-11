@@ -299,10 +299,8 @@ transform: translateX(0%);
   padding-bottom: 72px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/Dark-bg-mob.jpg),
-    url(../images/Dark-bg-mob-2x.jpg);
+      rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -348,6 +346,24 @@ transform: translateX(0%);
 .button:focus {
   background-color: #404bbf;
 }
+
+
+@media (min-resolution: 192dpi) and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), 
+      url("../images/Dark-bg-mob-2x.jpg");
+  }
+}
+/* @media (min-resolution: 192dpi) and (min-width: 480px) {
+  .hero {
+    background-image: 
+      url("../images/tablet/hero-x2.jpg");
+  }
+} */
+
 
 /*============================================== section 2 ==============================================*/
 
@@ -963,10 +979,8 @@ transform: translateX(0%);
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Dark-bg-tab.jpg),
-      url(../images/Dark-bg-tab-2xj.jpg);
+        rgba(46, 47, 66, 0.7)),
+      url(../images/Dark-bg-tab.jpg);
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 1440px;
@@ -1075,6 +1089,16 @@ justify-content: start;
   }
 }
 
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ), 
+      url("../images/Dark-bg-tab-2xj.jpg");
+  }
+}
+
 /* ============================================ NOT DESKTOP =================================================== */
 
 @media screen and (max-width: 1157px) {
@@ -1099,8 +1123,7 @@ justify-content: start;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg),
-      url(/images/Dark-bg-2x.jpg);
+      url(../images/people-office.jpg);
     padding-top: 188px;
     padding-bottom: 188px;
   }
@@ -1253,5 +1276,14 @@ justify-content: start;
 
   .footer-input::placeholder {
     padding-left: 40px;
+  }
+}
+@media (min-resolution: 192dpi) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),  
+      url("../images/Dark-bg-2x.jpg");
   }
 }
